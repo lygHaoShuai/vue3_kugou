@@ -1,0 +1,83 @@
+.header-outline {
+  height: 80px;
+  background-color: #00A9FF;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  .kugou-img {
+    height: 40px;
+    width: 124px;
+  }
+  .search {
+    height: 30px;
+    width: 280px;
+    margin-top: 6px;
+    position: relative;
+    padding-left: 40px;
+    .suggest {
+      position: absolute;
+      width: 280px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      margin-top: 10px;
+      padding: 0 20px;
+      z-index: 100;
+      box-sizing: border-box;
+      font-size: 14px;
+      .search-border {
+        padding:5px 0 5px 20px
+      }
+      .search-border:hover {
+        background-color: rgba(96,98,136,0.1);
+        cursor: pointer;
+      }
+      .search-border:first-child {
+        margin-top: 10px;
+      }
+      .search-border:last-child {
+        margin-bottom: 10px;
+      }
+      .search-cut {
+        height: 40px;
+        padding:12px 0 5px 20px;
+        border-top: 1px #bbbbbb solid;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 13px;
+        color: #bbbbbb;
+      }
+    }
+
+  }
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 40px;
+    span {
+      padding: 0 10px;
+      color: #E5F6FF;
+    }
+  }
+  .el-button--small.is-round {
+    padding: 9px 31px;
+    margin-top: 6px;
+    margin-left: 17px;
+    color: #00A9FF;
+
+  }
+  .el-input {
+    .el-input__wrapper {
+      border-radius: 50px !important;
+      background: rgb(77,194,255);
+      .el-input__inner {
+        caret-color: #fff;
+        color: #ffffff;
+        &::placeholder {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
